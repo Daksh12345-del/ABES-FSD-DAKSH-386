@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTY</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+            /*div does division and different span come together to form 1.If element is inline top padding and margin is not obeyed.*/
+        .box{
+            border:2px solid blue;
+            display: inline-block;
+            width:344px;
+            padding: 45px;
+            margin:45px;
+        }
+        .box1{
+            /*display: none;*/
+            visibility:hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box.</div>
+    <div class="box">and also a nice box</div>
+    <span>I am good</span>
+    <span>boy</span>
+
+    
+</body>
+</html>

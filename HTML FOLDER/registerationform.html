@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTERATION FORM</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            border: 2px solid black;
+            margin: 2px;
+            padding: 15px;
+            background-color: lightgreen;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .form form{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .input-large{
+            width: 1000px
+        }
+        .input-large1{
+            font-size: 25px;
+            background-color:green
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"><u>Registeration Form</u></h1>
+    <div class="form">
+    <form  border=0px cellpadding=0 cellspapcing=0 action="get">
+    <label for="username">Full Name</label>
+    <br>
+    <input type="text" id="username" name="username" placeholder="Enter your username" class="input-large">
+    <br>
+    <label for="E-Mail id">E-Mail</label>
+    <br>
+    <input type="text" id="E-Mail id" name="E-mail id" placeholder="Enter your E-mail id" class="input-large">
+    <br>
+    <label for="password">Password</label>
+    <br>
+    <input type="text" id="Password" name="Password" placeholder="Enter your Password" class="input-large">
+    <br>
+    <label for="Confirm Password">Confirm Password</label>
+    <br>
+    <input type="text" id="Confirm Password" name="Confirm Password" placeholder="Confirm your password" class="input-large">
+    <br>
+    <div>Gender:</div>
+    <input type="radio">Male
+    <br>
+    <input type="radio">Female
+    <br>
+    <label for="Hobbies">Hobbies:</label>
+    <br>
+    <input type="checkbox" name="hobby" value="reading">Reading
+    <br>
+    <input type="checkbox" name="hobby" value="Writing">Writing
+    <br>
+    <input type="checkbox" name="hobby" value="reading">Gaming
+    <br>
+    <label for="Course">Course Selection:</label>
+    <select id="course" name="course selection" class="input-large">
+    <option value="B-TECH">B-TECH</option>
+    <option value="BCA">BCA</option>
+    <option value="BBA">BBA</option>
+    <option value="MBA">MBA</option>
+    </select>
+    
+    <label for="Address">Address:</label>
+    <br>
+    <textarea name="Address" rows="4" cols="50">Enter your Address here</textarea>
+    <br>
+
+    <input type="submit" value="Submit" class="input-large1">
+    <input type="reset" value="Reset" class="input-large1">
+
+</form>
+</div>
+    
+</body>
+</html>

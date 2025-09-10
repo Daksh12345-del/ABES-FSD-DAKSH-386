@@ -6,70 +6,148 @@
     <title>Document</title>
     <link rel="icon" type="image/png" href="IMG_9597.JPG">
     <style>
-        .info{
-            font-size: 25pxx;
-            display:inline-block;
+        h1{
+            height: 50px;
         }
-        .about{
-            font-size: 25px;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        .project{
-            font-size: 25px;
+        .navbar{
+            background-color: #333;
+            overflow: scroll;
+            white-space: nowrap;
+            overflow-y: scroll;
+            text-overflow: ellipsis;
 
         }
-        .skills{
+        .navbar a{
+            display: inline-block;
+            color: aliceblue;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .navbar a:hover{
+            background-color: #573357;
+            color: yellowgreen;
+        }
+        .navbar a.active {
+            background-color: rebeccapurple;
+            color: azure;
+        }
+        body{
+            background-color: white;
+            color:black;
+        }
+        @media screen and (orientation:landscape ){
+        }
+        @media only screen and (max-width:600px)
+        {
+            body{
+                background-color: white;
+                color:black;
+            }
+            /* .boxes{
+                flex-direction: column;
+            } */
+        }
+        body {
+            animation: bgColorChange 5s infinite alternate;
+        }
+        @keyframes bgColorChange {
+            from { background-color: white; }
+            to { background-color: #e0c3fc; }
+        }
+        #introduction{
+            font-size: 30px;
+            clear: both;
+            margin-left: 20px;
+        }
+        #projects{
+            font-size: 30px;
+        }
+        #projects ul li{
             font-size: 25px;
+            list-style-type: disc;
+            margin-left: 40px;
+
+        }
+        #skills ul li{
+            font-size: 25px;
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+        #skills{
+            font-size: 30px;
+        }
+        #education{
+            font-size: 20px;
+        }
+        #me{
+            font-size: 20px;
+        }
+        #contact{
+            font-size: 25px;
+            margin-left: 4px;
+        }
+        .large{
+            width: 600px;
+        }
+        .large1{
+            width: 600px;
+        }
+        .large2{
+            background-color: green;
+            font-size: 25px;
+            display: block;
+            margin: 20px auto;
         }
     </style>
 </head>
 <body>
-
-    <h1 align="center" bgcolor="steelblue"><u><b><marquee behavior="scroll" direction="right" scrollamount="15" bgcolor="steelblue" height="50px">MY PORTFOLIO</marquee></u></b></h1>
+    <h1 align="center"><u><b><marquee behavior="scroll" direction="right" scrollamount="15" >MY PORTFOLIO</marquee></u></b></h1>
     <hr>
-    <img src="IMG_9597.JPG" alt="My photo" width="200px" height="200px" style="float :right; border-radius:8px;">
     <header>
-        <h1 align="center"><u>Daksh Singhal</u></h1>
-
-        <div class="info">
-        <nav>
-
-            <b><a href="#About me">About me</a></b>
-            <br>
-            <b><a href="#Projects">Projects</a></b>
-            <br>
-            <b><a href="#Contact me">Contact me</a></b>
-            <br>
-            <b><a href="#Education">Education</a></b>
-            <br>
-            <b><a href="#Skills">Skills</a></b>
-            <br>
-        </nav>
+        <div class="boxes">
+        <div class="navbar">
+        <a href="#Home" class="active">Home</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
         </div>
-        <hr>
     </header>
-    <section class="about">
-        <h2 align="center"><u>ABOUT ME</u></h2>
-        <p>Hello! My name is Daksh Singhal. I am pursuing B-TECH(CSE) and currently interested in learning web-devlopment and DSA</p>
+    <img src="IMG_9597.JPG" alt="My photo" width="200px" height="200px" style="float :right; border-radius:8px;">
+    <br>
+    <section id="introduction">
+    <h2 align="center"><u>About me</u></h2>
+    <p>Hello! My name is Daksh Singhal and I am currently pursuing my B.Tech from ABES Engineering College in CSE. I have a strong interest and passion for App Development, and Web Development. I have completed several certifications in these fields which helped me to strengthen my practical knowledge. I consider myself a anxious and practical learner, always eager to explore new technologies and apply them in real-life projects.My goal is to become an innovative developer who can create impactful and user-friendly solutions.</p>
     </section>
     <hr>
-    <section class="project">
-        <h1 align="center"><u><b>PROJECTS</b></u></h1>
-        <ul>
-        <li>Resume</li>
-        <li>Portfolio</li>
-        </ul>
-    </section>
-    <hr>
-    <section class="skills">
+    <section id="skills">
         <h1 align="center"><u><b>Technical Skills</b></u></h1>
         <ul>
-        <li>Proficient in HTML and CSS for web page structuring and styling</li>
-        <li>Skilled in Python for scripting, logic building, and problem-solving</li>
-        <li>Experienced with C programming including data structures and algorithms</li>
-        <li>Microsoft Office Suite (Word, PowerPoint, Outlook, Excel):-proficient in document creation, presentation design, email management, and basic data handling.</li>
+            <li>Proficient in HTML and CSS for web page structuring and styling</li>
+            <li>Skilled in Python for scripting, logic building, and problem-solving</li>
+            <li>Experienced with C programming including data structures and algorithms</li>
+            <li>Microsoft Office Suite (Word, PowerPoint, Outlook, Excel):-proficient in document creation, presentation design, email management, and basic data handling.</li>
         </ul>
     </section>
     <hr>
+    <section id="projects">
+    <h1 align="center"><u><b>Projects</b></u></h1>
+    <ul>
+        <li>Resume</li>
+        <li>Registeration Form</li>
+        <li>Netflix Clone</li>
+        <li>Portfolio</li>
+    </ul>
+    </section>
+    <hr>
+    <section id="education">
     <h1 align="center"><u><b>EDUCATION</b></u></h1>
     <table border="2" width=80% align="center" cellpadding="8px" cellspacing="0px">
         <tr>
@@ -104,22 +182,31 @@
             <td>1st</td>
         </tr>
     </table>
+    </section>
     <hr>
-    <h1 align="center"><u><b>CONTACT</b></u></h1>
-    <form action="post">
-        <label for="username">Enter your username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username">
+    <div id="me">
+    <h1 align="center"><u><b>Contact</b></u></h1>
+    </div>
+    <div id="contact">
+    <form action="get">
+        <label for="Name">Enter your Name:</label>
         <br>
-        <label for="E-mail">Enter your E-Mail</label>
-        <input type="text" id="E-mail" name="E-mail" placeholder="Enter your E-mail">
+        <input type="text" id="Name" name="Name" placeholder="Enter your Name" class="large">
+        <br>
+        <label for="E-mail">Enter your E-Mail:</label>
+        <br>
+        <input type="text" id="E-mail" name="E-mail" placeholder="Enter your E-mail" class="large1">
+        <br>
+        <label for="message">Enter your message:</label>
         <br>
         <textarea name="message" rows="4" cols="50">Enter your message here...</textarea>
         <br>
-        <input type="checkbox" id="submit" name="submit" value="YES">
-        <label for="submit">Submit the form</label>
+        <input type="submit" value="Submit" class="large2">
         <br>
+        <hr>
     </form>
-    <hr>
+    </div>
+    </div>
 </body>
 </html>
 

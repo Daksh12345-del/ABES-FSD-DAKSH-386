@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:5500/HTML%20FOLDER/portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./Document_files/IMG_9597.JPG">
+    <style>
+        h1{
+            height: 50px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            background-color: #333;
+            overflow: hidden;
+
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: aliceblue;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .navbar a:hover{
+            background-color: #573357;
+            color: yellowgreen;
+        }
+        .navbar a.active {
+            background-color: rebeccapurple;
+            color: azure;
+        }
+        .box{
+            animation: moveBox 4s infinite alternate;
+        }
+        .info{
+            font-size: 25px;
+            display:inline-block;
+        }
+        .about{
+            font-size: 30px;
+            clear: both;
+        }
+        .project{
+            font-size: 30px;
+        }
+        .project ul li{
+            font-size: 25px;
+            list-style-type: disc;
+            margin-left: 40px;
+
+        }
+        .skills ul li{
+            font-size: 25px;
+            list-style-type: disc;
+            margin-left: 40px;
+        }
+        .skills{
+            font-size: 30px;
+        }
+        @keyframes moveBox {
+            0%   { left: 0; top: 0; background: red; }
+            50%  { left: 200px; top: 0; background: blue; }
+            100% { left: 200px; top: 200px; background: green; }
+        }
+        .contact{
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center"><u><b><marquee behavior="scroll" direction="right" scrollamount="15" height="50px">MY PORTFOLIO</marquee></b></u></h1>
+    <hr>
+    <header>
+        <div class="navbar">
+        <a href="http://127.0.0.1:5500/HTML%20FOLDER/portfolio.html#" class="active">Home</a>
+        <a href="http://127.0.0.1:5500/HTML%20FOLDER/portfolio.html#">Introduction</a>
+        <a href="http://127.0.0.1:5500/HTML%20FOLDER/portfolio.html#">Skills</a>
+        <a href="http://127.0.0.1:5500/HTML%20FOLDER/portfolio.html#">Projects</a>
+        <a href="http://127.0.0.1:5500/HTML%20FOLDER/portfolio.html#">Contact</a>
+        </div>
+    </header>
+    <img src="./Document_files/IMG_9597.JPG" alt="My photo" width="200px" height="200px" style="float :right; border-radius:8px;">
+    <br>
+    <section class="about">
+        <h2 align="center"><u>About Me</u></h2>
+        <p>Hello! My name is Daksh Singhal and I am currently pursuing my B.Tech from ABES Engineering College in CSE. I have a strong interest and passion for App Development, and Web Development. I have completed several certifications in these fields which helped me to strengthen my practical knowledge. I consider myself a anxious and practical learner, always eager to explore new technologies and apply them in real-life projects.
+            My goal is to become an innovative developer who can create impactful and user-friendly solutions.</p>
+    </section>
+    <hr>
+    <!-- <section class="project">
+        <h1 align="center"><u><b>PROJECTS</b></u></h1>
+        <ul>
+        <li>Resume</li>
+        <li>Portfolio</li>
+        </ul>
+    </section>
+    <hr> -->
+    <section class="skills">
+        <h1 align="center"><u><b>Technical Skills</b></u></h1>
+        <ul>
+            <li>Proficient in HTML and CSS for web page structuring and styling</li>
+            <li>Skilled in Python for scripting, logic building, and problem-solving</li>
+            <li>Experienced with C programming including data structures and algorithms</li>
+            <li>Microsoft Office Suite (Word, PowerPoint, Outlook, Excel):-proficient in document creation, presentation design, email management, and basic data handling.</li>
+        </ul>
+    </section>
+    <hr>
+    <section class="project">
+    <h1 align="center"><u><b>Projects</b></u></h1>
+    <ul>
+    <li>Resume</li>
+    <li>Registeration Form</li>
+    <li>Netflix Clone</li>
+    </ul>
+    </section>
+    <hr>
+    <!-- <h1 align="center"><u><b>EDUCATION</b></u></h1>
+    <table border="2" width=80% align="center" cellpadding="8px" cellspacing="0px">
+        <tr>
+            <th>S.no.</th>
+            <th>Class/Degree</th>
+            <th>Board/University</th>
+            <th>Marks</th>
+            <th>Division</th>
+        </tr>
+        <tr bgcolor="lightgray">
+            <td>1</td>
+            <td>Modern Convent School</td>
+            <td>10th</td>
+            <td>CBSE</td>
+            <td>89.8%</td>
+            <td>1st</td>
+        </tr>
+        <tr bgcolor="lightblue">
+            <td>2</td>
+            <td>Modern Convent School</td>
+            <td>12th</td>
+            <td>CBSE</td>
+            <td>85.2%</td>
+            <td>1st</td>
+        </tr>
+         <tr bgcolor="lightgray">
+            <td>3</td>
+            <td>ABES Engineering College</td>
+            <td>1st Semester</td>
+            <td>AKTU</td>
+            <td>7.82</td>
+            <td>1st</td>
+        </tr>
+    </table> -->
+    <hr>
+    <h1 align="center"><u><b>CONTACT</b></u></h1>
+    <div class="contact">
+    <form action="http://127.0.0.1:5500/HTML%20FOLDER/get">
+        <label for="Name">Enter your Name</label>
+        <input type="text" id="Name" name="Name" placeholder="Enter your Name">
+        <br>
+        <label for="E-mail">Enter your E-Mail</label>
+        <input type="text" id="E-mail" name="E-mail" placeholder="Enter your E-mail">
+        <br>
+        <textarea name="message" rows="4" cols="50">Enter your message here...</textarea>
+        <br>
+        <input type="checkbox" id="submit" name="submit" value="YES" class="submit">
+        <label for="submit">Submit the form</label>
+        <br>
+    </form>
+    <hr>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>

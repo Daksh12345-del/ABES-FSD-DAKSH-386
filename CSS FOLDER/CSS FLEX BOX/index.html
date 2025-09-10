@@ -3,9 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FLEXBOX</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            /* display: inline-block; */
+            display: flex;
+            height: 60vh;
+            /* justify-content: center; */
+            align-items: center;
+            justify-content:space-around;
+            /* align-items: baseline; */
+
+            /*FLEX DIRECTION*/
+            flex-direction: row;
+            /* flex-direction: column-reverse; */
+
+            /*FLEX AXIS: The direction in which the justify content
+            has been there that is main axis and 
+            the other one is cross axis*/
+
+
+            /*FLEX WRAP*/
+            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
+
+            /*Align content*/
+            align-content: center;
+
+            /*There are no justify item :in flexbox */
+
+            /*FLEX FLOW:*/
+            /* flex-flow:row row-reverse; */
+            flex-flow: column wrap column-reverse; /*It contains two operations in a sngle statement*/
+            gap: 30px;
+            row-gap: 40px;
+            column-gap: 10px;
+
+
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            border: 2px solid black;
+            /* margin: 2px; */
+            background-color: violet;
+            text-align: center;
+            /* display: inline-block; */
+            /* display: flex; */
+        }
+        .order1{
+            order:1;
+        }
+        /* .order2{
+
+        }
+        .order3{
+
+        } */
+        /*order matlab niche se pehle*/
+
+        /*Flex grow:*/
+        .item1{
+            /* flex-grow: 22; */
+            flex-shrink: 2;
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item order1">66</div>  
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item">1</div>
+        </div>
+    </main>
     
 </body>
 </html>

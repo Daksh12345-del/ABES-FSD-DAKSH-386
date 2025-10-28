@@ -29,3 +29,5 @@ console.log(typeof nullvar);
 //boolean=>true/false
 //null==>empty value/standalone value
 //undefined==>value not assigned
+//symbol=>unique
+//object=>key value pairs

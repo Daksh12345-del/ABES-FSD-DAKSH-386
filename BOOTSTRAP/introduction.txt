@@ -1,0 +1,28 @@
+Bootstrap:
+1.Bootstrap is a popular open-source front-end framework used to design responsive and mobile-first websites quickly
+2.It provides pre built CSS  and JS components such as buttons, grids, navigation, bars ,modals ,for and cards- allowing developers to focus on design rather than repetitive styling
+3.Originally created by X engineers , it has evolved into a standard toolkit for modern web development
+
+Why Use Bootstrap?
+
+1.Responsive Design: Automatically adjusts to all screen sizes.
+
+2.Ready-to-use Components: Buttons, forms, modals, etc.
+
+3.Cross-browser Compatibility: Works across Chrome, Firefox, Edge, Safari.
+
+4.Customizable: You can override its styles with your own CSS.
+
+5.Time-saving: Predefined classes save development lime.
+
+3.⁠ ⁠How Bootstrap Works
+
+Bootstrap is essentially a collection of CSS and JavaScript files.
+
+You can:
+
+1.⁠ ⁠Include it via CON (Content Delivery Network), or
+
+2.⁠ ⁠Download it locally.
+
+4.⁠ ⁠Adding Bootstrap to Your Webpage

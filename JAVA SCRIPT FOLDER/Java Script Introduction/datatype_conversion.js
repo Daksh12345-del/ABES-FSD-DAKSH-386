@@ -12,3 +12,5 @@ console.log(valueinnumber)
 
 let booleanvalue = Boolean(score)
 console.log(booleanvalue)
+let a=null
+console.log(typeof a)

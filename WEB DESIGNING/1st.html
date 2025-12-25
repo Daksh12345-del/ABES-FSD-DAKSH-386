@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXPERIMENT-1</title>
     <style> 
+    body
+    {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f7e6d5;
+    }
+    .navbar
+    {
+        display: flex;
+        justify-content: center;
+        background-color: #fde9d8;
+        border-bottom: 2px solid #000;
+    }
+    .navbar a
+    {
+        padding: 14px 30px;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        border-right: 1px solid #000;
+        text-align: center;
+    }
+    .navbar a:last-child
+    {
+        border-right: none;
+    }
+    .navbar a:hover
+    {
+        background-color: #f0cdb7;
+    }
     table 
     { 
         width: 100vw; 
@@ -18,41 +48,41 @@
     </style> 
 </head>
 <body>
-    <!-- <nav>
-        <a href="1st.html">HOME</a> 
-        <a href="2nd.html">REGISTERATION</a> 
-        <a href="3.html">LOGIN</a>
-        <a href="3rd.html">CATALOUGE</a> 
-        <a href="4th.html">CART</a>
-    </nav> -->
     <table>
-<table border="2" align="center" cellpadding="8px" cellspacing="0px"> 
-  <tr bgcolor="orange" style="color: black;"> 
-   <th><img src="ABESEngineer.jpeg" width="100vw"> 
-   <th colspan="5" style="font-size: xx-large;">ABES ENGINEERING COLLEGE</th> 
-  </tr> 
-    <nav>
-        <a href="1st.html">HOME</a> 
-        <a href="2nd.html">LOGIN</a> 
-        <a href="registerationform.html">REGISTERATION</a>
-        <a href="3rd.html">CATALOUGE</a> 
-        <a href="4th.html">CART</a>
-    </nav>
-  <tr style="background-color: #e8aa7c" width="80vw"> 
-  <tr> 
-   <td>CSE</td> 
-   <td class=main-content colspan="4" rowspan="4"> 
-   </td> 
-  </tr> 
-  <tr> 
-   <td>ECE</td> 
-  </tr> 
-  <tr> 
-   <td>EEE</td> 
-  </tr> 
-  <tr> 
-   <td>CIVIL</td> 
-  </tr> 
-</table> 
-</body> 
+        <table border="2" align="center" cellpadding="8px" cellspacing="0px"> 
+            <tr bgcolor="orange" style="color: black;"> 
+                <th>
+                    <img src="ABESEngineer.jpeg" width="100vw">
+                </th>
+                <th colspan="5" style="font-size: xx-large;">
+                    ABES ENGINEERING COLLEGE
+                </th> 
+            </tr> 
+            <tr>
+                <div class="navbar">
+                    <a href="1st.html">HOME</a> 
+                    <a href="2nd.html">LOGIN</a> 
+                    <a href="registerationform.html">REGISTERATION</a>
+                    <a href="3rd.html">CATALOUGE</a> 
+                    <a href="4th.html">CART</a>
+                </div>
+            </tr>
+            <tr style="background-color: #e8aa7c" width="80vw"> 
+                <tr> 
+                    <td>CSE</td> 
+                    <td class=main-content colspan="4" rowspan="4"> 
+
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td>ECE</td> 
+                </tr> 
+                <tr> 
+                    <td>EEE</td> 
+                </tr> 
+                <tr> 
+                    <td>CIVIL</td> 
+                </tr> 
+            </table> 
+        </body> 
 </html> 

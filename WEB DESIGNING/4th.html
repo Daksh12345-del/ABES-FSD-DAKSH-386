@@ -4,31 +4,56 @@
 <meta charset="UTF-8"> 
 <title>ABES Book Store</title> 
 <style> 
-  body  
- { 
-   font-family: Arial, sans-serif; 
-   margin: 30px; 
- } 
- table  
- { 
-   width: 100%; 
-   border-collapse: collapse; 
-   text-align: center; 
- } 
- th, 
- td  
- { 
-   border: 1px solid black; 
-   padding: 8px; 
-    vertical-align: top; 
- } 
- .header  
+body
+{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7e6d5;
+}
+.navbar
+{
+  display: flex;
+  justify-content: center;
+  background-color: #fde9d8;
+  border-bottom: 2px solid #000;
+}
+.navbar a
+{
+  padding: 14px 30px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  border-right: 1px solid #000;
+  text-align: center;
+}
+.navbar a:last-child
+{
+  border-right: none;
+}
+.navbar a:hover
+{
+  background-color: #f0cdb7;
+}
+table  
+{ 
+  width: 100%; 
+  border-collapse: collapse; 
+  text-align: center; 
+} 
+th, 
+td  
+{ 
+  border: 1px solid black; 
+  padding: 8px; 
+  vertical-align: top; 
+} 
+.header  
 { 
   background-color: #f4a460; 
   font-weight: bold; 
   font-size: 20px; 
- } 
- .subheader  
+} 
+.subheader  
 { 
   background-color: #f8d6b0; 
   font-weight: bold; 
@@ -65,15 +90,18 @@
   <table> 
     <tr> 
         <th rowspan="2" class="logo"><img src="ABESEngineer.jpeg" width="75px"></th>
-     <th colspan="4" class="header">ABES ENGINEERING COLLEGE</th> 
+        <th colspan="4" class="header">ABES ENGINEERING COLLEGE</th> 
    </tr> 
-   <!-- <tr class="subheader"> 
-     <a href="1st.html">HOME</a>
-     <a href="2nd.html">LOGIN</a>
-     <a href="registerationform.html">REGISTERATION</a>
-    <a href="3rd.html">CATALOGUE</a>
-    <a href="4th.html">CART</a>
-   </tr>  -->
+   <tr>
+    <div class="navbar">
+        <a href="1st.html">HOME</a> 
+        <a href="2nd.html">LOGIN</a> 
+        <a href="registerationform.html">REGISTERATION</a>
+        <a href="3rd.html">CATALOUGE</a> 
+        <a href="4th.html">CART</a>
+    </div>
+  </tr>
+   </tr> 
     <tr> 
       <td class="dept"> 
         <p>CSE</p> 

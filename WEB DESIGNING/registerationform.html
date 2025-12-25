@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <style>
-        body 
-        {
-             background: #f6fff0; font-family: Arial; margin: 0; padding: 20px; 
-            }
+          body{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f7e6d5;
+    }
+    .header{
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 28px;
+        font-weight: bold;
+        background-color: #f3d9c5;
+    }
+    .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #fde9d8;
+            border-bottom: 2px solid #000;
+        }
+        .navbar a {
+            padding: 14px 30px;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            border-right: 1px solid #000;
+            text-align: center;
+        }
+        .navbar a:last-child {
+            border-right: none;
+        }
+        .navbar a:hover {
+            background-color: #f0cdb7;
+        }
+
         .container 
         {
-             max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+             max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
             }
         h1 
         {
@@ -49,11 +78,47 @@
         textarea { height: 80px; }
     </style>
 </head>
+<script>
+    function validateForm() {
+        let name = document.forms[0]["name"].value.trim();
+        let password = document.forms[0]["password"].value.trim();
+        let email = document.forms[0]["email"].value.trim();
+        let phone = document.forms[0]["phone"].value.trim();
+        let namePattern = /^[A-Za-z ]+$/; 
+        if (name.length < 6 || !namePattern.test(name)) {
+            alert("Name must contain only alphabets and be at least 6 characters long.");
+            return false;
+        }
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+        let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            alert("Enter a valid email in the format name@domain.com");
+            return false;
+        }
+        let phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone)) {
+            alert("Phone number must be exactly 10 digits.");
+            return false;
+        }
+        return true;
+    }
+</script>
 <body>
     <div class="container">
-        <h1>Registration Form</h1>
-        <form method="post" action="#">
+        <form method="post" action="#" onsubmit="return validateForm()">
             <table>
+    <div class="navbar">
+        <a href="1st.html">HOME</a> 
+        <a href="2nd.html">LOGIN</a> 
+        <a href="registerationform.html">REGISTERATION</a>
+        <a href="3rd.html">CATALOUGE</a> 
+        <a href="4th.html">CART</a>
+    </div>
+                        <h1>Registration Form</h1>
+                <tr class="subheader"> 
                 <tr><td>Name</td><td><input type="text" name="name" required></td></tr>
                 <tr><td>Password</td><td><input type="password" name="password" required></td></tr>
                 <tr><td>E-mail ID</td><td><input type="email" name="email" required></td></tr>

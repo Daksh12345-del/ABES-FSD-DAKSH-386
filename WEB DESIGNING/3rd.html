@@ -3,87 +3,137 @@
 <head> 
 <meta charset="UTF-8"> 
 <title>ABES Book Store</title> 
-<style> body { 
-font-family: Arial, sans-serif; margin: 30px; 
+<style>
+body
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7e6d5;
+}
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    background-color: #fde9d8;
+    border-bottom: 2px solid #000;
+}
+.navbar a
+{
+    padding: 14px 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    border-right: 1px solid #000;
+    text-align: center;
+}
+.navbar a:last-child
+{
+    border-right: none;
+}
+.navbar a:hover
+{
+    background-color: #f0cdb7;
+}
+table
+{ 
+    width: 100%; 
+    border-collapse: collapse;
+    text-align: center; 
 } 
-table { 
-width: 100%; 
-border-collapse: collapse; text-align: center; 
+th,td
+{ 
+    border: 1px solid black;
+    padding: 8px; 
+    vertical-align: top; 
 } 
-th,td { 
-border: 1px solid black; padding: 8px; 
-vertical-align: top; 
+.header
+{ 
+    background-color: #f4a460;
+    font-weight: bold; 
+    font-size: 20px; 
 } 
-.header { 
-background-color: #f4a460; font-weight: bold; 
-font-size: 20px; 
+.subheader
+{ 
+    background-color: #f8d6b0;
+    font-weight: bold; 
 } 
-.subheader { 
-background-color: #f8d6b0; font-weight: bold; 
+.dept
+{ 
+    text-align: left; 
+    font-weight: bold;
+    padding-left: 10px; 
 } 
-.dept { 
-text-align: left; 
- 
- font-weight: bold; padding-left: 10px; 
+.book-info
+{
+    text-align: left; 
+    line-height: 1.5;
+    padding-left: 15px; 
 } 
-.book-info { text-align: left; 
-line-height: 1.5; padding-left: 15px; 
+.price
+{ 
+    text-align: center;
+    font-weight: bold; 
 } 
-.price { 
-text-align: center; font-weight: bold; 
-} 
-.cart img { width: 120px; 
+.cart img
+{
+    width: 120px; 
 } 
 </style> 
 </head> 
 <body> 
 <table> 
-<tr> 
-<th rowspan="2"><img src="images (1).jpeg" width="75px"></th> 
-<th colspan="5" class="header">ABES ENGINEERING COLLEGE</th> 
-</tr> 
-<!-- <tr class="subheader"> 
-<a href="1st.html">HOME</a> 
-<a href="2nd.html">LOGIN</a>
-<a href="registerationform.html">REGISTERATION</a>
-<a href="3rd.html">CATALOGUE</a>
-<a href="4th.html">CART</a> -->
-<tr> 
-<td class="dept"> 
-<br><br> CSE<br><br><br><br><br><br><br><br><br> ECE<br><br><br><br><br><br><br><br><br> EEE<br><br><br><br><br><br><br><br><br> CIVIL 
-</td> 
-<td> 
-<img src="516RaKSnC6L._UF1000,1000_QL80_.jpg" width="100" height="140"><br><br> 
-<img src="27543.jpg" width="100" height="140"><br><br> 
-<img src="078214022X.jpg" width="100" height="140"><br><br> 
-<img src="515GNwKmORL._UF1000,1000_QL80_.jpg" width="100" height="140"> 
-</td> 
- <td class="book-info"> 
-<b>Book:</b> XML Bible<br> 
-<b>Author:</b> Winston<br> 
-<b>Publication:</b> Wiley<br><br><br><br><br> 
-<b>Book:</b> AI<br> 
-<b>Author:</b> S. Russel<br> 
-<b>Publication:</b> Princetonhall<br><br><br><br><br> 
-<b>Book:</b> Java 2<br> 
-<b>Author:</b> Watson<br> 
-<b>Publication:</b> BPB Publications<br><br><br><br><br> 
-<b>Book:</b> HTML in 24 Hours<br> 
-<b>Author:</b> Sam Peter<br> 
-<b>Publication:</b> Samp Publication 
-</td> 
-<td class="price"> 
-$40.5<br><br><br><br><br><br><br><br><br><br> 
-$63<br><br><br><br><br><br><br><br><br><br> 
-$35.5<br><br><br><br><br><br><br><br><br> 
-$50 
-</td> 
-<td class="cart"> 
-<img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"><br><br><br><br><br><br><br><br><br><br> 
-<img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"><br><br><br><br><br><br><br><br><br><br> 
-<img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"><br><br><br><br><br><br><br><br><br> 
-<img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"> 
-</td> 
+    <tr> 
+        <th rowspan="2"><img src="ABESEngineer.jpeg" width="75px"></th> 
+        <th colspan="5" class="header">ABES ENGINEERING COLLEGE</th> 
+    </tr> 
+    <tr>
+        <div class="navbar">
+            <a href="1st.html">HOME</a> 
+            <a href="2nd.html">LOGIN</a> 
+            <a href="registerationform.html">REGISTERATION</a>
+            <a href="3rd.html">CATALOUGE</a> 
+            <a href="4th.html">CART</a>
+        </div>
+    </tr>
+    <td class="dept"> 
+        <br><br>
+        CSE<br><br><br><br><br><br><br><br><br>
+        ECE<br><br><br><br><br><br><br><br><br>
+        EEE<br><br><br><br><br><br><br><br><br>
+        CIVIL 
+    </td> 
+    <td> 
+        <img src="516RaKSnC6L._UF1000,1000_QL80_.jpg" width="100" height="140"><br><br> 
+        <img src="27543.jpg" width="100" height="140"><br><br> 
+        <img src="078214022X.jpg" width="100" height="140"><br><br> 
+        <img src="515GNwKmORL._UF1000,1000_QL80_.jpg" width="100" height="140"> 
+    </td>
+    <td class="book-info"> 
+        <b>Book:</b> XML Bible<br> 
+        <b>Author:</b> Winston<br> 
+        <b>Publication:</b> Wiley<br><br><br><br><br> 
+        <b>Book:</b> AI<br> 
+        <b>Author:</b> S. Russel<br> 
+        <b>Publication:</b> Princetonhall<br><br><br><br><br> 
+        <b>Book:</b> Java 2<br> 
+        <b>Author:</b> Watson<br> 
+        <b>Publication:</b> BPB Publications<br><br><br><br><br> 
+        <b>Book:</b> HTML in 24 Hours<br> 
+        <b>Author:</b> Sam Peter<br> 
+        <b>Publication:</b> Samp Publication 
+    </td> 
+    <td class="price"> 
+        $40.5<br><br><br><br><br><br><br><br><br><br> 
+        $63<br><br><br><br><br><br><br><br><br><br> 
+        $35.5<br><br><br><br><br><br><br><br><br> 
+        $50 
+    </td> 
+    <td class="cart"> 
+        <img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"><br><br><br><br><br><br><br><br><br><br> 
+        <img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"><br><br><br><br><br><br><br><br><br><br> 
+        <img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"><br><br><br><br><br><br><br><br><br> 
+        <img src="Screenshot 2025-10-15 at 12.39.43 AM.png" alt="Add to cart"> 
+    </td> 
 </tr> 
 </table> 
 </body> 
